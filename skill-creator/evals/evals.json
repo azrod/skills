@@ -1,0 +1,64 @@
+{
+  "skill_name": "skill-creator",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to create a new skill for processing CSV files",
+      "assertions": [
+        "Asks clarifying questions about skill usage patterns or provides step-by-step guidance",
+        "References init_skill.py or the skill creation workflow",
+        "Mentions SKILL.md structure"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I write a good skill description?",
+      "assertions": [
+        "Explains imperative phrasing (Use this skill when...)",
+        "Mentions the 1024 character limit",
+        "Provides a concrete before/after example"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Package my skill for distribution",
+      "assertions": [
+        "References scripts/package_skill.py",
+        "Mentions validation runs before packaging",
+        "Provides the correct command syntax"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "My skill validation is failing, the name doesn't match",
+      "assertions": [
+        "Identifies the directory name must match the name field in frontmatter",
+        "Provides actionable fix (rename directory or update name field)"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Update my existing brand-guidelines skill to add a new logo asset",
+      "assertions": [
+        "Goes to Step 4 (Edit) or Step 6 (Iterate) rather than starting from Step 1",
+        "Mentions updating assets/ directory"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Help me use the BigQuery skill to query my database",
+      "assertions": [
+        "Does NOT invoke the skill-creator workflow",
+        "Focuses on BigQuery query syntax or skill usage"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Write a Python script to process PDFs",
+      "assertions": [
+        "Does NOT mention SKILL.md or skill creation",
+        "Focuses on PDF processing code"
+      ]
+    }
+  ]
+}
