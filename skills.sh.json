@@ -5,7 +5,7 @@
     {
       "title": "Skills",
       "description": "Reusable agent skills for Claude/opencode workflows.",
-      "skills": ["skill-creator", "gitflow-workflow"]
+      "skills": ["skill-creator", "gitflow-workflow", "decision-mode"]
     }
   ]
 }
